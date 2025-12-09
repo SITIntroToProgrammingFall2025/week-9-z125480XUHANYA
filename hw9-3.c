@@ -6,14 +6,14 @@ int main(void) {
     int C[2][2];
     int i, j, k;
 
-    /* input first matrix (2 x 3) */
+    /* 读入第一个矩阵 A (2 x 3) */
     for (i = 0; i < 2; i++) {
         for (j = 0; j < 3; j++) {
             scanf("%d", &A[i][j]);
         }
     }
 
-    /* input second matrix (3 x 2) */
+    /* 读入第二个矩阵 B (3 x 2) */
     for (i = 0; i < 3; i++) {
         for (j = 0; j < 2; j++) {
             scanf("%d", &B[i][j]);
@@ -30,7 +30,7 @@ int main(void) {
         printf("%d %d\n", B[i][0], B[i][1]);
     }
 
-    /* compute C = A * B : (2x3) * (3x2) = (2x2) */
+    /* 计算 C = A * B   (2x3) * (3x2) = (2x2) */
     for (i = 0; i < 2; i++) {
         for (j = 0; j < 2; j++) {
             C[i][j] = 0;
