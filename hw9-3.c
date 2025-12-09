@@ -20,16 +20,6 @@ int main(void) {
         }
     }
 
-    printf("The first matrix you entered is \n");
-    for (i = 0; i < 2; i++) {
-        printf("%d %d %d\n", A[i][0], A[i][1], A[i][2]);
-    }
-
-    printf("The second matrix you entered is \n");
-    for (i = 0; i < 3; i++) {
-        printf("%d %d\n", B[i][0], B[i][1]);
-    }
-
     /* 计算 C = A * B   (2x3) * (3x2) = (2x2) */
     for (i = 0; i < 2; i++) {
         for (j = 0; j < 2; j++) {
@@ -40,7 +30,7 @@ int main(void) {
         }
     }
 
-    printf("The multiplication product of matrix A and matrix B :\n");
+    /* 只输出结果矩阵 C */
     for (i = 0; i < 2; i++) {
         printf("%d %d\n", C[i][0], C[i][1]);
     }

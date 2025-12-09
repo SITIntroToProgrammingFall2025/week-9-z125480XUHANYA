@@ -4,12 +4,12 @@ int main(void) {
     int a[5];
     int i, j, tmp;
 
-    /* input 5 numbers */
+    /* 读取 5 个数 */
     for (i = 0; i < 5; i++) {
         scanf("%d", &a[i]);
     }
 
-    /* simple ascending sort (selection / bubble style都行) */
+    /* 从小到大排序 */
     for (i = 0; i < 5; i++) {
         for (j = i + 1; j < 5; j++) {
             if (a[j] < a[i]) {
@@ -20,15 +20,14 @@ int main(void) {
         }
     }
 
-    /* print sorted numbers on ONE line */
+    /* 一行输出：用空格隔开，最后加换行 */
     for (i = 0; i < 5; i++) {
         printf("%d", a[i]);
         if (i < 4) {
             printf(" ");
         }
     }
-    /* 结尾加换行更保险 */
-    // printf("\n");
+    printf("\n");
 
     return 0;
 }
